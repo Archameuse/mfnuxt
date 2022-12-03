@@ -10,7 +10,7 @@
                         </svg>
                     </NuxtLink>
                 </div>
-                <h1 className="text-5xl">{{currentHero.name}}</h1>
+                <h1 class="text-5xl">{{currentHero.name}}</h1>
                 <div>
                     <NuxtLink v-if="nextHero" :to="`/heroes/${nextId + 1}`">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">

@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     const sheets = google.sheets({ version: 'v4', auth: client });
     const range = process.env.DB_RANGE
     const body = await readBody(event)
-    if(!body.id) return 'ID Персонажа не был указан'
+    if(body.id === undefined) return 'ID Персонажа не был указан'
     const id = Number.parseInt(body.id)
 
     const res = await sheets.spreadsheets.batchUpdate({
