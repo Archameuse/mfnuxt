@@ -7,8 +7,8 @@ export default NuxtAuthHandler({
     providers: [
         // @ts-ignore
         DiscordProvider.default({ 
-            clientId: '1048299650991538216', 
-            clientSecret: '6dSiPAB5f8uxd5gIOVIizo3Let0GoKDa' ,
+            clientId: process.env.DISCORD_ID, 
+            clientSecret: process.env.DISCORD_SECRET ,
             authorization: {
                 params: {
                     scope: 'identify'

@@ -11,6 +11,8 @@ declare global {
       AUTH_SECRET: string;
       DB_ADMINS_RANGE: string;
       AUTH_ORIGIN: string;
+      DISCORD_SECRET: string;
+      DISCORD_ID: string;
     }
   }
 }
