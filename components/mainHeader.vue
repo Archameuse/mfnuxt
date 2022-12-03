@@ -16,7 +16,7 @@
           <AuthHeader :event="signOut" label="выйти" />
         </div>
         <AuthHeader :event="() => signIn('discord')" label="войти" v-else/>
-        <!-- <ButtonHeader label="язык" /> -->
+        <!-- <ButtonHeader label="язык" />  -->
       </div>
     </div>
 </template>
