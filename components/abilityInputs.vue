@@ -13,7 +13,7 @@
         <AddInput :value="ability.cd" :tag="('ability-cd' + index)" text="Перезарядка" variant="number" />
         <div class="flex items-center mb-4">
             <input :checked="ability.passive" type="checkbox" id="ability-ispassive" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500">
-            <label for="ability-ispassive" class="ml-2 text-sm font-medium text-gray-900">Пассивная</label>
+            <label :for="('ability-ispassive' + index)" class="ml-2 text-sm font-medium text-gray-900">Пассивная</label>
         </div>
         <AddInput :value="ability.image" :tag="('ability-image' + index)" text="Изображение" placeholder='https://i.imgur.com/bJUoGF0.png'/>
         <AddInput :value="ability.video" :tag="('ability-video' + index)" text="Видео" placeholder='https://i.imgur.com/bJUoGF0.png'/>
